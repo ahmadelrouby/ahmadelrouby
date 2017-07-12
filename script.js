@@ -107,21 +107,37 @@ var current = document.getElementById('current');
 var first = document.getElementById('first');
 var second = document.getElementById('second');
 var third = document.getElementById('third');
+var fourth = document.getElementById('fourth');
+var fifth = document.getElementById('fifth');
 
 function render(){
+
   current.innerHTML = names[i];
+  
   if(i + 1 < names.length)
     first.innerHTML = names[i+1];
   else
     first.innerHTML = "";
+
   if(i + 2 < names.length)
     second.innerHTML = names[i+2];
   else
     second.innerHTML = "";
+
   if(i + 3 < names.length)
     third.innerHTML = names[i+3];
   else
     third.innerHTML = "";
+
+  if(i + 4 < names.length)
+    fourth.innerHTML = names[i+4];
+  else
+    fourth.innerHTML = "";
+
+  if(i + 5 < names.length)
+    fifth.innerHTML = names[i+5];
+  else
+    fifth.innerHTML = "";
 }
 
 function inc(){
